@@ -1,38 +1,38 @@
-import SingletonCounter from "./counter.js";
-import SingletonCounter2 from "./counter2.js";
-import SingletonCounter3 from "./counter3.js";
+import SingletonCounter from './counter.js';
+import SingletonCounter2 from './counter2.js';
+import SingletonCounter3 from './counter3.js';
 
 function file3_execute() {
-    SingletonCounter.increment();
-    SingletonCounter.increment();
-    console.log("Incremented twice in file3");
-    console.log("Counter Value in file3: ", SingletonCounter.getCount());
+  SingletonCounter.increment();
+  SingletonCounter.increment();
+  console.log('Incremented twice in file3');
+  console.log('Counter Value in file3: ', SingletonCounter.getCount());
 
-    console.log("Decrementing once in file3");
-    SingletonCounter.decrement();
-    console.log("Counter Value in file3: ", SingletonCounter.getCount());
+  console.log('Decrementing once in file3');
+  SingletonCounter.decrement();
+  console.log('Counter Value in file3: ', SingletonCounter.getCount());
 }
 
 function file3_execute2() {
-    SingletonCounter2.increment();
-    SingletonCounter2.increment();
-    console.log("Incremented twice in file3");
-    console.log("Counter Value in file3: ", SingletonCounter2.getCount());
+  SingletonCounter2.increment();
+  SingletonCounter2.increment();
+  console.log('Incremented twice in file3');
+  console.log('Counter Value in file3: ', SingletonCounter2.getCount());
 
-    console.log("Decrementing once in file3");
-    SingletonCounter2.decrement();
-    console.log("Counter Value in file3: ", SingletonCounter2.getCount());
+  console.log('Decrementing once in file3');
+  SingletonCounter2.decrement();
+  console.log('Counter Value in file3: ', SingletonCounter2.getCount());
 }
 
 function file3_execute3() {
-    SingletonCounter3.increment();
-    SingletonCounter3.increment();
-    console.log("Incremented twice in file3");
-    console.log("Counter Value in file3: ", SingletonCounter3.getCount());
+  SingletonCounter3.increment();
+  SingletonCounter3.increment();
+  console.log('Incremented twice in file3');
+  console.log('Counter Value in file3: ', SingletonCounter3.getCount());
 
-    console.log("Decrementing once in file3");
-    SingletonCounter3.decrement();
-    console.log("Counter Value in file3: ", SingletonCounter3.getCount());
+  console.log('Decrementing once in file3');
+  SingletonCounter3.decrement();
+  console.log('Counter Value in file3: ', SingletonCounter3.getCount());
 }
 
 export { file3_execute, file3_execute2, file3_execute3 };

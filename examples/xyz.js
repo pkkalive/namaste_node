@@ -1,1 +1,1 @@
-console.log("XYZ file executed");
+console.log('XYZ file executed');

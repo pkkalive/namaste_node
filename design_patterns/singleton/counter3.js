@@ -1,9 +1,9 @@
 const counter = (count) =>
-    Object.freeze({
-        getCount: () => count,
-        increment: () => ++count,
-        decrement: () => --count,
-    });
+  Object.freeze({
+    getCount: () => count,
+    increment: () => ++count,
+    decrement: () => --count
+  });
 
 const SingletonCounter3 = counter(0);
 
