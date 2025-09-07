@@ -20,3 +20,9 @@ singleton.file1[1]();
 singleton.file2[1]();
 singleton.file3[1]();
 console.log();
+
+console.log("********************* Singleton Pattern *********************");
+singleton.file1[2]();
+singleton.file2[2]();
+singleton.file3[2]();
+console.log();

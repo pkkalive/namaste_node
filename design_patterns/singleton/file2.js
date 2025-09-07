@@ -1,5 +1,6 @@
 import SingletonCounter from "./counter.js";
 import SingletonCounter2 from "./counter2.js";
+import SingletonCounter3 from "./counter3.js";
 
 function file2_execute() {
     SingletonCounter.increment();
@@ -17,4 +18,12 @@ function file2_execute2() {
     console.log("Counter Value in file2: ", SingletonCounter2.getCount());
 }
 
-export { file2_execute, file2_execute2 };
+function file2_execute3() {
+    SingletonCounter3.increment();
+    SingletonCounter3.increment();
+    SingletonCounter3.increment();
+    console.log("Incremented thrice in file2");
+    console.log("Counter Value in file2: ", SingletonCounter3.getCount());
+}
+
+export { file2_execute, file2_execute2, file2_execute3 };
