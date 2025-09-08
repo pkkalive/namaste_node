@@ -13,6 +13,22 @@ async function main() {
     const db = client.db(dbName);
     const collection = db.collection('User');
 
+    const insertResult = await collection.insertMany([
+      {
+        firstName: 'Vivaan',
+        lastName: 'Kalive',
+        address: {
+          street: '414 Larry Court',
+          city: 'Piscataway',
+          state: 'New Jersey',
+          zipcode: '08854',
+          country: 'USA'
+        },
+        mobile: '9082571969'
+      }
+    ]);
+    console.log('Inserted documents =>', insertResult);
+
     const findResult = await collection.find({}).toArray();
     console.log('Found documents =>', findResult);
 
